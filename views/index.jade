@@ -1,6 +1,14 @@
 extends layout
 
 block content
-  h3 Welcome to roots!
-  :markdown
-    Find tutorials and documentation at http://roots.cx : )
+  .name-entry
+    label#prompt Name
+    input#name
+    button#enter Color My Name
+    
+  .name-stats
+    label#binary Name in binary:
+      p
+    label#hex Name in hexidecimal:
+      p
+    
