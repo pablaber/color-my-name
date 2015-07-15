@@ -1,6 +1,7 @@
 extends layout
 
 block content
+<<<<<<< HEAD
   .name-entry
     label#prompt Name
     input#name
@@ -11,4 +12,19 @@ block content
       p
     label#hex Name in hexidecimal:
       p
+=======
+  .content
+    .name-entry
+      h3.entry Enter your name:
+      input(onkeydown="if (event.keyCode == 13) document.getElementById('enter').click()")#name
+      button#enter Color It!
+      
+    .name-stats
+      label.label Name in binary
+        p#binaryName ???
+      label.label Name in hexidecimal
+        p#hexName ???
+      label.label Name in color
+        #colorName
+>>>>>>> 0ee8be5... add styling
     
