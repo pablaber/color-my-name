@@ -1,29 +1,47 @@
 .header
-  background-color: cmn_grey_dark
-  padding: 5px 20px
-  border-bottom: solid cmn_yellow_mid 1px
   .navigation
-    ul
-      padding-left: 0px
-      margin-top: 0px
-      margin-bottom: 0px
-      li
+    navigation(3, cmn_grey_dark, cmn_yellow_mid)
+    gradient(cmn_grey_dark)
+    border-bottom: solid cmn_yellow_mid 1px
+
+    .item
+      a
+        color: cmn_yellow_mid
+        hover-fade()
+        bold()
+        text-decoration: none
         font-family: 'Yanone Kaffeesatz', sans-serif;
         text-transform: uppercase
-        letter-spacing: 2px
-        display: inline
-        margin-right: 40px
+        letter-spacing: 1px
+        padding-left: 2px
 
-        a
-          text-decoration: none
-          color: cmn_yellow_mid
-          font-weight: bold
-          font-size: 30px
+        &:hover
+          color: none !important
+          -o-transition: .5s
+          -ms-transition: .5s
+          -moz-transition: .5s
+          -webkit-transition: .5s
+          transition: .5s
 
-          &:hover
-            color: cmn_grey_light
-            -o-transition: .5s
-            -ms-transition: .5s
-            -moz-transition: .5s
-            -webkit-transition: .5s
-            transition: .5s
+    #logo
+      vertically-align()
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      text-transform: uppercase
+      letter-spacing: 2px
+      display: inline
+      margin-right: 40px
+      margin: 0px 20px
+      padding: 0
+      a
+        text-decoration: none
+        color: cmn_yellow_mid
+        font-weight: bold
+        font-size: 30px
+        hover-fade()
+
+        &:hover
+          -o-transition: .5s
+          -ms-transition: .5s
+          -moz-transition: .5s
+          -webkit-transition: .5s
+          transition: .5s
